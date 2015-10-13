@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ToDo {
     static void printTodos(ArrayList<ToDoItem> todos) {
         int todoNum = 1; //numbering the todos
-        for (ToDoItem todo : todos) { // if we need to loop over ever item in a collection like an arraylist use the for loop
+        for (ToDoItem todo : todos) { // if we need to loop over every item in a collection like an arraylist use the for loop
             String checkBox = "[ ]";
             if (todo.isDone) {
                 checkBox = "[x]";
