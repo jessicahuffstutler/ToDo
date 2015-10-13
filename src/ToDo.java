@@ -12,7 +12,8 @@ public class ToDo {
             if (todo.isDone) {
                 checkBox = "[x]";
             }
-            System.out.println(todoNum + ". " + checkBox + " " + todo.text);
+            String line = String.format("%d. %s %s", todoNum, checkBox, todo.text); //static because it's in the class calling the Strings, if it wasn't we could call it on a particular string like CheckBox.
+            System.out.println(line);
             todoNum++; //adding one each time. 1, 2, 3, etc.
         }
     }
